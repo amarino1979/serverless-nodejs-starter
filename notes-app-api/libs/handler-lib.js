@@ -4,7 +4,7 @@ export default function handler(lambda) {
         // Run the Lambda
         .then(() => lambda(event, context))
         // On success
-        .then((responseBody) => [200, reponseBody])
+        .then((responseBody) => [200, responseBody])
         // On failure
         .catch((e) => {
             console.log(e);
